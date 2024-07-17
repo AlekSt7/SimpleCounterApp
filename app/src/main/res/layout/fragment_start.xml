@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="30dp"
+    android:paddingVertical="40dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Hello Counters!"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:id="@+id/paragraph_1"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Это демо приложение, где можно увидеть возможности библиотеки CounterView."
+        android:layout_below="@+id/title"/>
+
+    <TextView
+        android:id="@+id/paragraph_2"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="В приложении продемонстрированы две версии работы со счетчиками. Счетчики с нативным поведением
+ и счетчики с поведением, заложенным через InputBehavior. Внешний вид счетчиков можно кастомизировать через xml параметры."
+        android:layout_below="@+id/paragraph_1"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Стартуем!"
+        android:drawableEnd="@drawable/baseline_navigate_next_24"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

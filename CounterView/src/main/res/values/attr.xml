@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CounterView">
+
+        <!-- Colors, styles -->
+        <attr name="incrementImage" format="reference" />
+        <attr name="decrementImage" format="reference" />
+        <attr name="incrementBackground" format="reference" />
+        <attr name="decrementBackground" format="reference" />
+        <attr name="activeColorAccent" format="color" />
+        <attr name="inactiveColorAccent" format="color" />
+
+        <!-- Sizes -->
+        <attr name="cornersRad" format="dimension" />
+        <attr name="minusSize" format="dimension" />
+        <attr name="valueSize" format="dimension" />
+        <attr name="plusSize" format="dimension" />
+        <attr name="size" format="dimension" />
+        <attr name="valueWeight" format="float" />
+        <attr name="elementsPadding" format="dimension" />
+
+        <!-- States -->
+        <attr name="active" format="boolean" />
+
+        <!-- Values -->
+        <attr name="value" format="integer" />
+        <attr name="maxValue" format="integer" />
+        <attr name="minValue" format="integer" />
+        <attr name="valueText" format="string" />
+
+        <!-- Interaction -->
+        <attr name="fastInput" format="boolean" />
+        <attr name="inputFormat" format="dimension">
+            <enum name="increment" value="0" />
+            <enum name="decrement" value="1" />
+            <enum name="full" value="2" />
+            <enum name="value_only" value="3" />
+        </attr>
+        <attr name="inputBehavior" format="dimension">
+            <enum name="DefaultInputBehavior" value="0" />
+            <enum name="AnimatedDefaultInputBehavior" value="1" />
+            <enum name="TransformInputBehavior" value="2" />
+        </attr>
+
+    </declare-styleable>
+</resources>

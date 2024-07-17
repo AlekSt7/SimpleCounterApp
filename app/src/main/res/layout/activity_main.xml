@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.activity.main_activity.MainActivity">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <me.relex.circleindicator.CircleIndicator3
+        android:id="@+id/tabs"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        app:ci_orientation="horizontal"
+        app:ci_gravity="center"
+        app:ci_drawable="@drawable/circle_selected"
+        app:ci_drawable_unselected="@drawable/circle_unselected"
+        android:layout_height="20dp" />
+
+</FrameLayout>

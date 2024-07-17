@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@+id/minus_container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:clickable="true"
+        android:focusable="true"
+        tools:ignore="RtlSymmetry">
+
+        <ImageView
+            android:id="@+id/minus"
+            android:layout_width="wrap_content"
+            android:layout_height="12dp"
+            android:adjustViewBounds="true"
+            tools:src="@drawable/baseline_remove_24"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/value"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_weight="4"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="0"
+        android:textColor="@color/active"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <FrameLayout
+        android:id="@+id/plus_container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:clickable="true"
+        android:focusable="true"
+        tools:ignore="RtlSymmetry">
+
+        <ImageView
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="12dp"
+            android:adjustViewBounds="true"
+            tools:src="@drawable/baseline_add_24"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+
+
+</merge>

@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SimpleCounterApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="plusSize">17dp</item>
+        <item name="minusSize">17dp</item>
+    </style>
+
+    <style name="Theme.SimpleCounterApp" parent="Base.Theme.SimpleCounterApp">
+        <item name="android:textViewStyle">@style/Theme.SimpleCounterApp.TextViewStyle</item>
+    </style>
+
+    <style name="Theme.SimpleCounterApp.TextViewStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/active</item>
+    </style>
+
+</resources>

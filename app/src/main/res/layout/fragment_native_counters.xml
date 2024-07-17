@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:ignore="HardcodedText">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello Counters!"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Tap on the counter or plus \n for start"
+        android:textAlignment="center"
+        android:textColor="@color/active" />
+
+    <com.alek.counterview.CounterView
+        android:id="@+id/product_counter"
+        android:layout_marginTop="15dp"
+        app:maxValue="10"
+        app:inputBehavior="DefaultInputBehavior"
+        app:inactiveColorAccent="@color/cardview_dark_background"
+        app:cornersRad="20dp"
+        android:elevation="7dp"
+        app:elementsPadding="17dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Tap on plus for start" />
+
+    <com.alek.counterview.CounterView
+        android:id="@+id/product_counter_2"
+        android:layout_marginTop="15dp"
+        android:background="@color/transparent"
+        app:inputBehavior="AnimatedDefaultInputBehavior"
+        app:incrementBackground="@drawable/rounded"
+        app:decrementBackground="@drawable/rounded"
+        app:maxValue="10"
+        app:elementsPadding="0dp"
+        android:layout_width="100dp"
+        android:layout_height="31dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Mooore of quick taps!" />
+
+    <com.alek.counterview.CounterView
+        android:id="@+id/gaming_counter"
+        android:layout_marginTop="15dp"
+        app:fastInput="true"
+        app:inputBehavior="TransformInputBehavior"
+        app:elementsPadding="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" />
+
+</LinearLayout>
